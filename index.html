@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation DB - jQuery example</title>
+
+</head>
+<body>
+
+ 
+<script type="text/javascript">
+
+let url = 'https://geolocation-db.com/json/'
+// Make the request
+fetch(url)
+  // Extract JSON body content from HTTP response
+  .then(response => response.json())
+  .then(data => {
+    var countryCode = data.country_code;
+    if (countryCode === 'BY') {
+      window.location = "https://www.ya.ru"; // UK site link here
+    } else if (countryCode == 'CA') {
+      window.location = "https://google.com"; // US site link here
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+</script>   
+    
+    
+    
+    
+</body>
+</html>
