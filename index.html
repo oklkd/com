@@ -16,7 +16,7 @@ fetch(url)
   .then(response => response.json())
   .then(data => {
     var countryCode = data.country_code;
-    if (countryCode === 'BY') {
+    if (countryCode === 'DE') {
       window.location = "https://www.ya.ru"; // UK site link here
     } else if (countryCode == 'CA') {
       window.location = "https://google.com"; // US site link here
